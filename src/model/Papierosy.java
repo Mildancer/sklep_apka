@@ -19,6 +19,13 @@ public class Papierosy extends Produkt {
         this.rodzaj = rodzaj;
     }
 
+    @Override
+    public String toString(){
+        return super.toString() + "\t"  +           // \t -tabulator
+        this.rodzaj + "\t" +
+                this.ilosc;
+
+    }
 
 
 

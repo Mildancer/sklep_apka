@@ -23,4 +23,13 @@ public class Alkohol extends Produkt {
         return "alko";
     }
 
+
+    @Override
+    public String toString(){
+        return super.toString() + "\t"  +           // \t -tabulator
+                this.pojemnosc + "\t" +
+                this.procentAlkoholu;
+
+    }
+
 }
