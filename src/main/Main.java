@@ -13,12 +13,5 @@ public class Main {
         Menu menuAplikacji = new Menu();   // tworzenie obiektu, po to by sie odniesc do klasy, ktora sie gdzies indziejzefinionwalo
         menuAplikacji.wyswietl();
 
-
-
-
-
-
-
-
     }
 }

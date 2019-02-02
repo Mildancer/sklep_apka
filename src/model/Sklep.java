@@ -10,16 +10,24 @@ public class Sklep {
 
     private List<Alkohol> alkohole;  //lista -array-lista bazujaca na tablicy. link lista
 
+    private  List<Papierosy> papierosy;
+
 
     // kosntruktor sklepu
 
     public Sklep(String nazwa) {
         this.nazwa = nazwa;
         this.alkohole = new ArrayList<>();
+        this.papierosy = new ArrayList<>();
+
     }
 
     public void dodajAlkohol(Alkohol alkohol) {          //metoda
         alkohole.add(alkohol);                          //add dodaje do listy
+    }
+
+    public void dodajPapierosy(Papierosy papieros) {          //metoda
+        papierosy.add(papieros);                          //add dodaje do listy
     }
 
     public void usunAlkohol(int id){
@@ -42,8 +50,22 @@ public class Sklep {
 
     }
     public void wyswietl() {
-        System.out.println(alkohole); //wyswietl liste alkoholi
+        for (Alkohol alkohol : alkohole) {
+            System.out.println(alkohole); //wyswietl liste alkoholi
+        }
     }
+
+    public String toString(){
+        String rezultat = "id\tnazwa\tcena\n";
+        for (Alkohol alkohol : alkohole){
+            rezultat += alkohol + "\n";// "\n"; - nowa
+        }
+        for (Papierosy papierosy : papierosy){
+            rezultat += papierosy + "\n";// "\n"; - nowa linia
+        }
+        return rezultat;
+    }
+
 
 
 }

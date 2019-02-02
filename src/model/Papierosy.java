@@ -2,32 +2,33 @@ package model;
 
 import java.math.BigDecimal;
 
-public class Alkohol extends Produkt {
+public class Papierosy {
 
    private static int generator = 1; // dla id by kazdy byl inny
 
     private int id;                 // private by nie mogli zmieniac nam tych cen np w innych klasach
     private  String nazwa;
     private BigDecimal cena;
-    private String pojemnosc;
-    private  String procentAlkoholu;
+    private int ilosc;
+    private String rodzaj;
+
 
     // kontruktor parametry ze wszystkimi parametrami (oprocz id)
 
-    public Alkohol(String nazwa, BigDecimal cena, String pojemnosc, String procentAlkoholu) {
+    public Papierosy(String nazwa, BigDecimal cena, int ilosc, String rodzaj) {
         this.id = generator; // lub zapisac to po prostu tak:   this.id = generator;
         // static- optymalizacja dla stalej, by pojawiala sie tylko raz/statyczna - zmienna 1  dla wszystkich obiektow
         generator++;
         this.nazwa = nazwa;
         this.cena = cena;
-        this.pojemnosc = pojemnosc;
-        this.procentAlkoholu = procentAlkoholu;
+        this.ilosc = ilosc;
+        this.rodzaj = rodzaj;
     }
 
     public int getId(){
+
         return id;
     }
-
 
     @Override                      // kompilator wyswietli blad, gdy zrobimy literowke- poinformuje nas podczas kompilacji
     public String toString(){                 // konwersja obiektu na string
