@@ -11,6 +11,7 @@ public class Produkt
     private BigDecimal cena;
 
     public Produkt(String nazwa, BigDecimal cena) {
+        this.id = generator++;
         this.nazwa = nazwa;
         this.cena = cena;
     }
@@ -20,11 +21,18 @@ public class Produkt
         return id;
     }
 
+    public String getTyp(){
+        return "produkt";
+
+    }
 
     @Override                      // kompilator wyswietli blad, gdy zrobimy literowke- poinformuje nas podczas kompilacji
     public String toString(){                 // konwersja obiektu na string
         return
-                getId() + "\t" + this.nazwa + "\t"+ this.cena + " PLN";                  // this z tej klasy
+                getId() + "\t"
+                        + getTyp() + "\t"
+                        + this.nazwa + "\t"
+                        + this.cena + " PLN";                  // this z tej klasy
 
 
     }

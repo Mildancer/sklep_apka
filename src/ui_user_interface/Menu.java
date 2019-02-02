@@ -22,6 +22,10 @@ public class Menu {
 
       Scanner wejscie = new Scanner(System.in);
 
+      sklep.dodaj(new Alkohol("cytryna", BigDecimal.TEN, "0.7l", "40%"));
+      sklep.dodaj(new Alkohol("kawa", BigDecimal.TEN, "0.75l", "45%"));
+    sklep.dodaj(new Papierosy("malboro", new BigDecimal("20.5"),20, "grube"));
+
       String wybor;
       String tak;
 
@@ -45,7 +49,7 @@ public class Menu {
               String procentAlkoholu = wejscie.nextLine();
 
               Alkohol alkohol = new Alkohol(nazwa,cena, pojemnosc, procentAlkoholu);
-              sklep.dodajAlkohol(alkohol);  // dodanie do sklepu
+              sklep.dodaj(alkohol);  // dodanie do sklepu
 
           }
           else if (wybor.equals("2")){
@@ -77,7 +81,7 @@ public class Menu {
               String rodzaj = wejscie.nextLine();
 
               Papierosy papieros = new Papierosy(nazwa, cena, ilosc, rodzaj);
-              sklep.dodajPapierosy(papieros);  // dodanie do sklepu
+              sklep.dodaj(papieros);  // dodanie do sklepu
 
           }
           else if (wybor.equals("q")){

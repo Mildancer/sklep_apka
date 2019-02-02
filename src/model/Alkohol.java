@@ -19,6 +19,8 @@ public class Alkohol extends Produkt {
         this.procentAlkoholu = procentAlkoholu;
     }
 
-
+    public String getTyp(){
+        return "alko";
+    }
 
 }
