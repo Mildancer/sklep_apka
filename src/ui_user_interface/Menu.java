@@ -9,6 +9,7 @@ public class Menu {
       System.out.println("2 - usun alkohol");
       System.out.println("3 - wyswietl liste");
       System.out.println("q - wyjscie");
+      //TODO dodac nowe opcje
 
       Scanner wejscie = new Scanner(System.in);
 
