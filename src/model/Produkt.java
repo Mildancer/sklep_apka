@@ -1,8 +1,9 @@
 package model;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 
-public class Produkt
+public class Produkt implements Serializable
 {
     private static int generator = 1; // dla id by kazdy byl inny
 
