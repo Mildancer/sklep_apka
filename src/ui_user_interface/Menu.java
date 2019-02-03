@@ -1,5 +1,6 @@
 package ui_user_interface;
 
+import io.PlikJson;
 import io.PlikiBinarne;
 import model.Alkohol;
 import model.Papierosy;
@@ -18,8 +19,8 @@ public class Menu {
         Scanner wejscie = new Scanner(System.in);
 
         // Sklep sklep = new Sklep("Alkohole w akademiku");
-        PlikiBinarne pliki = new PlikiBinarne();
-
+      //  PlikiBinarne pliki = new PlikiBinarne();
+        PlikJson pliki = new PlikJson();
         Sklep sklep;
 
         try {

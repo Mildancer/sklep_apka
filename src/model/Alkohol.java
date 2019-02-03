@@ -19,6 +19,26 @@ public class Alkohol extends Produkt {
         this.procentAlkoholu = procentAlkoholu;
     }
 
+    public Alkohol() {
+
+    }
+
+    public String getPojemnosc() {
+        return pojemnosc;
+    }
+
+    public void setPojemnosc(String pojemnosc) {
+        this.pojemnosc = pojemnosc;
+    }
+
+    public void setProcentAlkoholu(String procentAlkoholu) {
+        this.procentAlkoholu = procentAlkoholu;
+    }
+
+    public String getProcentAlkoholu() {
+        return procentAlkoholu;
+    }
+
     public String getTyp(){
         return "alko";
     }

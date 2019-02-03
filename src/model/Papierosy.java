@@ -19,6 +19,25 @@ public class Papierosy extends Produkt {
         this.rodzaj = rodzaj;
     }
 
+    public Papierosy() {
+    }
+
+    public int getIlosc() {
+        return ilosc;
+    }
+
+    public String getRodzaj() {
+        return rodzaj;
+    }
+
+    public void setIlosc(int ilosc) {
+        this.ilosc = ilosc;
+    }
+
+    public void setRodzaj(String rodzaj) {
+        this.rodzaj = rodzaj;
+    }
+
     @Override
     public String toString(){
         return super.toString() + "\t"  +           // \t -tabulator
