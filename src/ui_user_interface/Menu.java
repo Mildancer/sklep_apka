@@ -21,6 +21,10 @@ public class Menu {
         // Sklep sklep = new Sklep("Alkohole w akademiku");
       //  PlikiBinarne pliki = new PlikiBinarne();
         PlikJson pliki = new PlikJson();
+
+        
+
+
         Sklep sklep;
 
         try {
